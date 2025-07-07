@@ -117,7 +117,6 @@
         <figure class="image is-3by2">
           <img src="./static/images/S_MEDIRL.gif" style="max-width: 100%; height: auto;" alt="Demo GIF">
         </figure>
-        <p>This GIF demonstrates our planner (S-MEDIRL) planning in a simulated indoor space.</p>
       </div>
     </div>
   </div>
@@ -131,8 +130,24 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce DoorNav, a predictive graph-based planning framework for long-horizon robot navigation in indoor environments. DoorNav leverages semantic cues and geometric topology to infer human-like navigation strategies from prior datasets. We construct graphs where edges represent feasible navigation and nodes represent spatial primitives (e.g., rooms, doors). A policy over this graph is trained using demonstrations collected in simulated and real environments, allowing robots to plan abstract trajectories that align with human behavior. This strategy allows robots to generalize to unseen environments, while offering interpretability and compatibility with traditional motion planning modules. We show that DoorNav outperforms learning-based and sampling-based planners in downstream metrics like success rate and goal completion time.
-          </p>
+           We introduce ImplicitNav,a pipeline for learning a reward maps
+for social navigation in dynamic environments where the
+robot can reason about its path at any time, given agents’
+trajectories and scene geometry. Humans navigating in dense
+and dynamic indoor environments often work with several
+implied social rules. A rule-based approach fails to model
+all possible interactions between humans, robots, and scenes.
+We propose a novel Smooth Maximum Entropy Deep In-
+verse Reinforcement Learning (S-MEDIRL) algorithm that
+can extrapolate beyond expert demos to better encode scene
+navigability from few-shot demonstrations. The agent learns
+to predict the cost maps reasoning on trajectory data and
+scene geometry. The agent samples a trajectory that is then
+executed using a local crowd navigation controller. We show
+results in a photo-realistic simulation environment, with a
+robot and a human navigating narrow crossing scenario.
+The robot implicitly learns to exhibit social behaviors such
+as yielding to oncoming traffic and avoiding deadlocks.  </p>
         </div>
       </div>
     </div>
