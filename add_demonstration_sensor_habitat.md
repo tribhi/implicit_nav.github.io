@@ -1,4 +1,9 @@
 # Adding a Custom Task Sensor in Habitat 0.3.1
+---
+title: "Helpful Resource"
+permalink: /resource/
+layout: none
+---
 
 This document describes how to add a custom task sensor (DemonstrationSensor) to Habitat.
 
